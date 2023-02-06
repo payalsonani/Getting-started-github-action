@@ -43,6 +43,11 @@ jobs:
           echo the SELENIUM_JAR_PATH
           echo $SELENIUM_JAR_PATH
           
+      - name: Step 7 - Log build tool versions
+        run: 
+          mvn --version
+          ant -version
+          gradle --version
      
-      - name: Step 7 - Log the post-build disc space
+      - name: Step 8 - Log the post-build disc space
         run: df
